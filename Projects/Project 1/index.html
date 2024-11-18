@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="left-container">
+            <!-- Replace with your Access Key -->
+            <input type="hidden" name="access_key" value="fab2ed38-30b6-42f9-a818-d7c39be844c2">
+            <div class="heading">
+                <h2>Contact Us</h2>
+                <hr>
+            </div>
+            <input class="contact-inputs" type="text" name="name" value="" placeholder="Enter your name">
+            <input class="contact-inputs" type="email" name="email" id="" placeholder="Enter your Email">
+            <textarea class="message" name="message" id="" placeholder="Enter your message"></textarea>
+            <button type="submit">Submit
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </form>
+        <div class="right-container">
+            <div id="observablehq-chart-4f4a0051"></div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+    <script type="module">
+        import { Runtime, Inspector } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+        import define from "https://api.observablehq.com/@d3/disjoint-force-directed-graph/2.js?v=4";
+        new Runtime().module(define, name => {
+            if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-4f4a0051"));
+        });
+    </script>
+
+</body>
+
+</html>

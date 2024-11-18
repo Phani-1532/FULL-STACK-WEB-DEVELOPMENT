@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat | onestop.ai | Simple chat app</title>
+    <link href="vendor/bootstrap-5.3.3-dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="card" style="width: 700px; height:600px">
+                <div class="card-header text-center">
+                    <span id="email-label"></span>
+                    <span class= "float-end" data-bs-toggle="tooltip" data-bs-placement="right" title="Logout" onclick="triggerLogout()" ><i class="fa fa-power-off"></i></span>
+                    <span class= "float-start" data-bs-toggle="tooltip" data-bs-placement="left" title="Go Back to Start Chat" onclick="goBackStartPage()" ><i class="fa fa-arrow-left"></i></span>
+
+                </div>
+                <div class="card-body">
+                    <div class="chats" id="chatBox">
+                        <ul class="chat-bubble-container">
+                            <li class="sent">
+                                <p class="chat-bubble from-message">Hi! How are you?</p>
+                            </li>
+                            <li class="reply">
+                                <p class="chat-bubble to-message">Hi! I am doing good "Thank You!" </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="chat-input">
+                        <div class="input-group mb-3">
+                            <input type="text" class="chat form-control" placeholder="Write your message" name="" id="">
+                            <div class="input-group-append">
+                                <button type="button" class="btn btn-primary submit"><i class="fa fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="vendor/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+    <script>
+        /*if(localStorage.getItem('logged in user_id ') =="" || localStorage.getItem('logged in user_id ')==undefined || localStorage.getItem('logged in user_id ') == null){
+            location.href = "login.html"
+        }*/
+        document.getElementById('email-label').innerHTML="Chatting with <b>"+localStorage.getItem('chat-user_email') +"</b>"
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+
+        function triggerLogout(){
+            localStorage.removeItem('logged in user_id ')
+            localStorage.removeItem('chat-user_id')
+            localStorage.removeItem('chat-user_email')
+            location.href="login.html"
+        }
+
+        function goBackStartPage(){
+           
+            localStorage.removeItem('chat-user_id')
+            localStorage.removeItem('chat-user_email')
+            location.href="start chat.html"
+        }
+    </script>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
+        import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js";
+        import { getDatabase, ref, set, push, onValue } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-database.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyBqyAsxOWQzxKIbVtSKtyRs65d96OQ-heA",
+            authDomain: "simplechatapp-b3f20.firebaseapp.com",
+            databaseURL: "https://simplechatapp-b3f20-default-rtdb.firebaseio.com/",
+            projectId: "simplechatapp-b3f20",
+            storageBucket: "simplechatapp-b3f20.appspot.com",
+            messagingSenderId: "730684823625",
+            appId: "1:730684823625:web:25109ec3e4e7908dde0798",
+            measurementId: "G-W6JT3BWJ3L"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase();
+        $(window).on('keydown',function(e){
+            if (e.which==13){
+                newChat();
+                return false;
+            }
+        })
+
+        $(".submit").click(function(){
+            newChat();
+        })
+
+        function newChat(){
+            var chat = $(".chat").val();
+            if($.trim(chat)==""){
+                return false;
+            }
+            insertChatData(chat);
+        }
+
+        function insertChatData(chat){
+            push(ref(db,"/chats"),{
+                from : localStorage.getItem('logged in user_id'),
+                to : localStorage.getItem('chat-user_id'),
+                message : chat
+            })
+        }
+
+        const chatRef = ref (db, "/chats");
+        onValue(chatRef,(snapshot)=>{
+            var arr = [];
+            snapshot.forEach((childSnapShot)=>{
+                const childData = childSnapShot.val();
+                if((childData.from == localStorage.getItem('logged in user_id') || childData.to ==  localStorage.getItem('logged in user_id')) || (childData.from == localStorage.getItem('chat-user_id') || childData.to == localStorage.getItem('chat-user_id'))){
+                    arr.push(childData);
+                }
+            })
+            writeChatsOnScreen(arr);
+        })
+
+        function writeChatsOnScreen(chats){
+            $(".chats ul").html("");
+            for (let chat in chats){
+                var from_user_id = chats[chat].from
+                var to_user_id = chats[chat].to
+                var stored_message = chats[chat].message
+                var message_type;
+                var bubble;
+                if (from_user_id == localStorage.getItem('logged in user_id') ){
+                    message_type = "sent ";
+                    bubble = "from-message"
+                }else{
+                    message_type = "reply ";
+                    bubble = "to-message"
+                }
+                $('<li class="'+message_type+'"><p class="'+bubble+'">'+stored_message+'</p></li>').
+                appendTo($(".chats ul"))
+                $(".chat").val(null);
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*const auth = getAuth(app);
+        const db = getDatabase(app);
+
+        // Set the chat user's email dynamically (replace with the logged-in user's email)
+        document.getElementById('chatUserEmail').innerText = "User.One@yopmail.com";
+
+        // Logout functionality
+        document.getElementById('logoutBtn').addEventListener('click', () => {
+            signOut(auth).then(() => {
+                alert('Successfully logged out');
+                window.location.href = 'login.html'; // Redirect to login page
+            }).catch((error) => {
+                console.error('Logout error:', error);
+            });
+        });
+
+        // Go back functionality
+        document.getElementById('goBackBtn').addEventListener('click', () => {
+            window.location.href = 'start chat.html'; // Redirect to the user list page (update the file name if needed)
+        });
+
+        // Listen for new messages
+        const messageListRef = ref(db, 'messages/');
+        onValue(messageListRef, (snapshot) => {
+            const messages = snapshot.val();
+            const messageList = document.getElementById('messageList');
+            messageList.innerHTML = ''; // Clear previous messages
+
+            // Display messages
+            for (const key in messages) {
+                const messageItem = document.createElement('li');
+                messageItem.className = messages[key].type === 'sent' ? 'sent' : 'reply';
+                messageItem.innerHTML = `<p class="chat-bubble ${messages[key].type}-message">${messages[key].text}</p>`;
+                messageList.appendChild(messageItem);
+            }
+            // Scroll to the bottom of chat
+            messageList.scrollTop = messageList.scrollHeight;
+        });
+
+        // Send message
+        document.getElementById('sendMessageBtn').addEventListener('click', () => {
+            const messageInput = document.getElementById('messageInput');
+            const messageText = messageInput.value;
+
+            if (messageText.trim()) {
+                const newMessageRef = ref(db, 'messages/' + Date.now());
+                set(newMessageRef, {
+                    text: messageText,
+                    type: 'sent' // Change as needed to indicate message type
+                });
+                messageInput.value = ''; // Clear input
+            }
+        });*/
+    </script>
+</body>
+</html>

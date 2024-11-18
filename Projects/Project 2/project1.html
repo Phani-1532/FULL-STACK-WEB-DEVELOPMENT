@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single page E-commerce Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="project_css.css"> 
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-light navbar-light navbar-expand-lg">
+            <div class="container-fluid">
+                <a href="https://corp.toei-anim.co.jp/en/index.html" class="navbar-brand" target="_blank">
+                    <img src="zoro.png" height="50" alt="">
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-target="#navbar" data-bs-toggle="collapse">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <div class="navbar-nav  ms-auto">
+                        <a href="#" class="nav-item nav-link disabled">Home</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class=" nav-link dropdown-toggle" data-bs-toggle="dropdown">About Us</a>
+                                <div class="dropdown-menu">
+                                    <a href="#Company" class="dropdown-item">Anime Info</a>
+                                    <a href="#Team" class="dropdown-item">Team</a>
+                                </div>
+                        </div>
+                        <a href="#Contact Us" class="nav-item nav-link">Contact Us</a>
+                        <a href="#Last" class="nav-item nav-link">Page End</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="carousel slide" id="carousel" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" ></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" ></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" >
+                    <img src="https://wallpapers.com/images/high/one-piece-film-red-wounded-shanks-l61ule17wq1p4ffo.webp" class="d-block w-100 carousel" alt="carousel1" style="max-height: 100vh">
+                </div>
+                <div class="carousel-item " >
+                    <img src="https://wallpapers.com/images/high/vector-art-akatsuki-naruto-laptop-wvolgeoa3y4qdpdn.webp" class="d-block w-100 carousel" alt="carousel2" style="max-height: 100vh;">
+                </div>
+                <div class="carousel-item" >
+                    <img src="https://wallpapers.com/images/high/bleach-4k-ultra-hd-soul-card-battle-poster-kzmktls7sxzz28wc.webp" class="d-block w-100 carousel" alt="carousel2" style="max-height: 100vh;">
+                </div>
+            </div>
+            <button type="button" class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button type="button" class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </header>
+    <main class="m-2">
+        <section class="container" id="Company">
+            <h4 class="display-5 text-center m-3">Anime info</h4>
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="container">
+                        <img src="https://wallpaperaccess.com/full/8673858.jpg" height="500"  alt="">
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <p>Anime, a style of animation that originated in Japan, has become a global cultural phenomenon known for its diverse genres and unique artistic styles. Unlike Western animation, which often targets a younger audience, anime encompasses a wide range of themes and stories that appeal to all age groups. From the fantastical worlds of Studio Ghibli's films, like "Spirited Away," to the intense action of series like "Attack on Titan" and "Naruto," anime offers something for everyone. It explores complex characters and narratives, often blending intricate plotlines with deep emotional themes. This rich storytelling is enhanced by vibrant visuals, imaginative worlds, and dynamic soundtracks, making anime a captivating and influential medium in modern entertainment.</p>
+                    <p>Certainly! Here’s an additional paragraph with more detailed information about anime:
+
+                        Anime is not only a form of entertainment but also a medium that reflects and influences societal values and trends. The genre has evolved significantly over the decades, incorporating technological advancements and changing cultural attitudes. For instance, the use of digital animation techniques has allowed for more fluid and intricate visual effects, enhancing the overall viewing experience. Moreover, anime often tackles complex issues such as mental health, identity, and existential dilemmas, providing a platform for nuanced discussions that resonate with diverse audiences. 
+
+                        </p>
+                </div>
+            </div>
+            <div class="container">
+                <h4 class="display-5 text-center m-3">What makes us unique</h4>
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <div class="container text-center">
+                            <span class="bi bi-person color-teal icon-lg"></span>
+                            <p>Custom tailored user options</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="container text-center">
+                            <span class="bi bi-shield-shaded color-teal icon-lg"></span>
+                            <p>Privacy first approach</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="container text-center">
+                            <span class="bi bi-list color-teal icon-lg"></span>
+                            <p>Multiple variations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container " id="Team">
+            <h4 class="display-5 text-center m-3">Our innovative team</h4>
+            <div class="row" >
+                <div class="col-md-4 d-flex justify-content-center align-content-center"> 
+                    <div class="card text-center" style="width:300px">
+                        <img class="card-img-top" src="https://cdn.myanimelist.net/images/voiceactors/2/74096.jpg" height="450px"  alt="">
+                        <div class="card-body text-center">
+                            <h5 class="card-header">Eiichiro Oda</h5>
+                            <p class="card-text">Eiichiro Oda is a celebrated Japanese manga artist best known for his creation of One Piece, a groundbreaking manga series that has captivated readers worldwide since its debut in 1997. With its intricate world-building, compelling characters, and adventurous plotlines, One Piece has become one of the best-selling manga series of all time. Oda's unique storytelling style, combined with his imaginative artwork, has earned him widespread acclaim and a dedicated global fanbase.</p>
+                        </div>
+                        <div class="card-footer">
+                            <i class="bi bi-facebook m-2"></i>
+                            <i class="bi bi-instagram m-2"></i>
+                            <i class="bi bi-twitter m-2"></i>
+                            <i class="bi bi-linkedin m-2"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center align-content-center"> 
+                    <div class="card text-center" style="width:300px">
+                        <img class="card-img-top" src="Masashi_Kishimoto.webp"  alt="">
+                        
+                        <div class="card-body text-center">
+                            <h5 class="card-header">Masashi Kishimoto</h5>
+                            <p class="card-text">Masashi Kishimoto is a highly influential Japanese manga artist renowned for creating the globally popular series Naruto. Debuting in 1999, Naruto quickly became a cultural phenomenon, known for its rich storytelling, intricate world-building, and memorable characters. The series follows Naruto Uzumaki, a young ninja with dreams of becoming the strongest leader of his village, while grappling with his own internal struggles and complex relationships. Kishimoto's unique art style and innovative approach to storytelling have earned him acclaim and a dedicated fanbase around the world. </p>
+                        </div>
+                        <div class="card-footer">
+                            <i class="bi bi-facebook m-2"></i>
+                            <i class="bi bi-instagram m-2"></i>
+                            <i class="bi bi-twitter m-2"></i>
+                            <i class="bi bi-linkedin m-2"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center align-content-center"> 
+                    <div class="card text-center" style="width:300px">
+                        <img class="card-img-top" src="Tite_Kubo.webp"  alt="">
+                        
+                        <div class="card-body text-center">
+                            <h5 class="card-header">Tite Kubo</h5>
+                            <p class="card-text">Tite Kubo is a prominent Japanese manga artist best known for creating the widely acclaimed series Bleach. First serialized in 2001, Bleach follows the adventures of Ichigo Kurosaki, a teenager who acquires the powers of a Soul Reaper and must protect the living world from malevolent spirits known as Hollows. Kubo's distinctive art style, combined with his inventive approach to character design and storytelling, helped Bleach achieve significant popularity both in Japan and internationally. Known for its dynamic action sequences and intricate plot twists, Bleach solidified Kubo's reputation as a key figure in modern manga.</p>
+                        </div>
+                        <div class="card-footer">
+                            <i class="bi bi-facebook m-2"></i>
+                            <i class="bi bi-instagram m-2"></i>
+                            <i class="bi bi-twitter m-2"></i>
+                            <i class="bi bi-linkedin m-2"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container m-4" id="Contact Us">
+                <h4 class="display-5 text-center m-3">Contact Us</h4>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="container p-3">
+                            <p class="text-mute text-center fs-3">Here's our contact info</p>
+                            <div class="text-black-s text-center fs-4">Our email info</div>
+                            <div class="text-black-50 text-center fs-5"><a href="https://corp.toei-anim.co.jp/en/index.html" style="text-decoration: none;color:grey" target="_blank" >Click here</a></div>
+                            <div class="text-black-s text-center fs-4">Our phoneNumber</div>
+                            <div class="text-black-50 text-center fs-5">+81-3-3946-2201</div>
+                            <div class="text-black-s text-center fs-4">Our address</div>
+                            <div class="text-black-50 text-center fs-5">Toei Animation Co., Ltd.
+                                4-1-2, Otowa, Bunkyo-ku,
+                                Tokyo 112-8611, Japan
+                                
+                                </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="container">
+                            <p class="text-mute text-center fs-3">You can also write to us</p>
+                            <div class="container p-1">
+                                <div class="card shadow">
+                                    <div class="card-body">
+                                        <form id="contactForm" action="bestAnime.html" target="_blank" >
+                                        <div class="form-group">
+                                            <label for="name" class="form-label">Enter Your Name</label>
+                                            <input class="form-control" type="text" name="name" id="name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="emailId" class="form-label">Enter Your emailAddress</label>
+                                            <input class="form-control" type="email" name="email" id="emailId" >
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="subject" class="form-label">Enter Your Subject</label>
+                                            <input class="form-control" type="text" name="subject" id="subject" >
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="message" class="form-label">Enter Your Text</label>
+                                            <textarea class="form-control"  name="message" id="message" ></textarea>
+                                        </div>
+                                        <div class="form-group text-center m-3">
+                                            <input type="submit" id="submit" class="btn btn-outline-primary" value="Send message">
+                                        </div>
+                                        
+                                        </form>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section>
+            <div class="container" id="Last">
+                <h5 class=" text-center m-3"><a style="text-decoration: none;color:black;"  href="#navbar">Go Back</a></h5>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="container m-5">
+                        <img src="zoro.png" height="50" alt="" class="bg-white">
+                        <div>
+                            <p class="text-white">The anime industry includes a range of key players, from large production studios like Studio Ghibli and Toei Animation to independent creators and smaller studios. The medium has also expanded beyond Japan, with international collaborations and adaptations contributing to its growing global presence.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="container m-5">
+                        <p class="text-white fs-5">Quick links</p>
+                        <ul>
+                            <li><a href="#Team" class="text-decoration text-white">About Team</a></li>
+                            <li><a href="#Company" class="text-decoration text-white">Anime Info</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="text-white text-center">
+                        All rights reserved &copy,2000 <a target="_blank" href="https://corp.toei-anim.co.jp/en/index.html">Toei Animation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var suggest = document.getElementById('submit')
+        suggest.addEventListener('click',name)
+        function name(){
+            alert(`Your response reached us and `+`Click "OK"` + ` to reach your destination`)
+        }       
+    </script>
+   
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<!--it helpful to render or load on the website page-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--it displays properly special characters like(!@#$)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--it occupies completely width of the device and zoom performances-->
+    <meta name="description" content="Personal profile page of Phani" />
+    <!--for seo it appears first in when you search in google-->
+    <title>Phani's Website</title>
+    <link rel="icon" href="./assests/image/web.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="assests/css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <center>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./assests/image/icon.jpg" alt="Phani's Logo" height="50">
+                    <span>Portfolio</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact-me">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link resume-button" href="./Projects/Resume.pdf" download>Resume</a></li>
+                        <li class="nav-item">
+                            <button id="dark-mode-toggle" class="btn btn-outline-dark"><i class="fa-solid fa-moon"></i></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header>
+        <img src="./assests/image/PASSPORT SIZE.jpg" alt=""  />
+        <h1>This is Phani, a <span class="about-me" ></span></h1>
+        <p>Welcome to my world!</p>
+        <p>"I am a web developer with a strong interest in creating responsive and user-friendly websites. My skills include HTML, CSS, JavaScript, and Bootstrap for front-end development, and I also have experience working with Python for back-end tasks. I am proficient in using Git and GitHub for version control and collaboration, and I work with MySQL for database management. Additionally, I utilize Postman for API testing and integration, ensuring smooth communication between front-end and back-end systems. My passion lies in combining design and functionality to build efficient and visually appealing web applications."</p>
+        </header> <hr>
+
+        <section>
+        <h2>My Skills</h2>
+        <table align="center">
+            <tr>
+            <td>
+                <ul class="skills-list">
+                <li>HTML+CSS</li>
+                <li>javaScript</li>
+                <li>Bootstrap</li>
+                <li>Postman API</li>
+                <li>Python</li>
+                <li>MySQL</li>
+                <li>Git & Github</li>
+                </ul>
+            </td>
+            </tr>
+        </table>
+        </section><hr>
+
+        <section class="horizontal-scroll">
+            <div class="icon-container">
+                <img src="./assests/icons/html.png" alt="icon 1">
+                <img src="./assests/icons/css.webp" alt="icon 2">
+                <img src="./assests/icons/js.png" alt="icon 3">
+                <img src="./assests/icons/bootstrap.png" alt="icon 4">
+                <img src="./assests/image/postman.png" alt="icon 5">
+                <img src="./assests/icons/python.png" alt="icon 6">
+                <img src="./assests/icons/mysql.jpg" alt="icon 7">
+                <img src="./assests/icons/git.webp" alt="icon 8">
+                <img src="./assests/icons/github.jpg" alt="icon 9">
+            </div>
+        </section>
+
+
+        <section>
+            <div class="skill">
+                <h1>My Skills Proficiency</h1>
+                
+                    <li>
+                        <h3>HTML</h3>
+                        <span class="bar" data-progress="95%"></span>
+                    </li>
+                    <li>
+                        <h3>CSS</h3>
+                        <span class="bar" data-progress="85%"></span>
+                    </li>
+                    <li>
+                        <h3>JavaScript</h3>
+                        <span class="bar" data-progress="60%"></span>
+                    </li>
+                    <li>
+                        <h3>Bootstrap</h3>
+                        <span class="bar" data-progress="90%"></span>
+                    </li>
+                    <li>
+                        <h3>Postman API</h3>
+                        <span class="bar" data-progress="90%"></span>
+                    </li>
+                    <li>
+                        <h3>Python</h3>
+                        <span class="bar" data-progress="65%"></span>
+                    </li>
+                    <li>
+                        <h3>MySQL</h3>
+                        <span class="bar" data-progress="70%"></span>
+                    </li>
+                    <li>
+                        <h3>Git & GitHub</h3>
+                        <span class="bar" data-progress="80%"></span>
+                    </li>
+                
+            </div>
+        </section>
+        
+        
+            <h2>My Projects</h2>
+            <p>Take a look at some of my works</p>
+            <section id="projects">
+                <div class="project-thumbnail">
+                    <div class="thumbnail-content">
+                        <img src="./assests/image/contact form.webp" alt="Project 1">
+                        <h3>Project 1</h3>
+                        <p>A <strong>Contact Form  Webpage</strong> is a responsive interface that enables users to submit inquiries, feedback, or messages, typically including fields for name, email, and a message, sent directly to the website owner.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal1">
+                            Know More
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project-thumbnail">
+                    <div class="thumbnail-content">
+                        <img src="./assests/image/single page.png" alt="Project 1">
+                        <h3>Project 2</h3>
+                        <p>A <strong>Single Page E-Commerce Website</strong> is a streamlined platform that showcases products, facilitates user interactions, and enables seamless shopping and checkout processes, all within a single, responsive webpage.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal2">
+                            Know More
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project-thumbnail">
+                    <div class="thumbnail-content">
+                        <img src="./assests/image/chat app.png" alt="Project 1">
+                        <h3>Project 3</h3>
+                        <p>A <strong>Chat App Webpage</strong> is a real-time communication platform that allows users to send and receive messages instantly, featuring a responsive design and intuitive interface for seamless interaction.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal3">
+                            Know More
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project-thumbnail">
+                    <div class="thumbnail-content">
+                        <img src="./assests/image/todo list.jpeg" alt="Project 1">
+                        <h3>Project 4</h3>
+                        <p>A <strong>Basic To-Do App</strong> is a simple and responsive webpage that allows users to add, manage, and track tasks, helping to organize daily activities efficiently.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal4">
+                            Know More
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project-thumbnail">
+                    <div class="thumbnail-content">
+                        <img src="./assests/image/showcasing.jpg" alt="Project 1">
+                        <h3>Project 5</h3>
+                        <p>A <strong>Sliding Food Showcasing Website</strong> is a visually appealing single-page site with dynamic sliders to display delicious food items, offering an interactive and responsive browsing experience.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal5">
+                            Know More
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project-thumbnail">
+                    <div class="thumbnail-content">
+                        <img src="./assests/image/swiggy.png" alt="Project 1">
+                        <h3>Project 6</h3>
+                        <p>A <strong> Swiggy Clone Website</strong> is a basic food delivery platform that showcases restaurants and menus, enabling users to browse, order food, and track deliveries with a simple, responsive interface.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal6">
+                            Know More
+                        </button>
+                    </div>
+                </div>
+
+            </section>
+    
+        <section>
+
+        <section>
+            <h2 id="contact-me">Contact Form</h2>
+            <div class="contact-container">
+                <form action="https://api.web3forms.com/submit" method="POST" class="left-container">
+                    <!-- Replace with your Access Key -->
+                    <input type="hidden" name="access_key" value="fab2ed38-30b6-42f9-a818-d7c39be844c2">
+                    <div class="heading">
+                        <h2>Send me an Email</h2>
+                        <hr>
+                    </div>
+                    <input class="contact-inputs" type="text" name="name" value="" placeholder="Enter your name" required>
+                    <input class="contact-inputs" type="email" name="email" id="" placeholder="Enter your Email" required>
+                    <textarea class="message" name="message" id="" placeholder="Enter your message" required></textarea>
+                    <button type="submit">Send Message
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+            <section>
+            <h2>Contact information</h2>
+            <p>Let's Connect</p>
+            <p>
+                <a href="mailto:phanindragadireddy@gmail.com" class="icon-link email-icon"><i class="fa-solid fa-envelope"></i></a> 
+                <a href="https://www.linkedin.com/in/phanindra-gadireddy/" class="icon-link linkedin-icon"><i class="fa-brands fa-linkedin"></i></a>
+            </p>
+            </section>
+
+        <footer>
+            <p>&copy; 2024 Phani. Built by </p>
+        </footer>
+
+        <!--Project information modal-->
+        <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="foodModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="foodModalLabel">Project 1 Contact form web page</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-row">
+                                <div class="column git" description>
+                                    <p class="review"><span>Short Project review</span></p>
+                                    <p>A Contact Form Webpage is a responsive interface designed for users to submit inquiries, feedback, or messages directly to the website owner or support team. It typically includes fields for name, email, subject, and message, ensuring seamless communication.</p>
+                                </div>
+                                <div class="carousel slide" id="carousel" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" ></button>
+                                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" ></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active" >
+                                            <img src="./assests/image/contact form 1.jpg" class="d-block w-100 carousel" alt="carousel1" style="max-height: 100vh;" >
+                                        </div>
+                                        <div class="carousel-item" >
+                                            <img src="./assests/image/contact form 2.webp" class="d-block w-100 carousel" alt="carousel2" style="max-height: 100vh;">
+                                        </div>
+                                        <div class="carousel-item" >
+                                            <img src="./assests/image/contact form 3.webp" class="d-block w-100 carousel" alt="carousel2" style="max-height: 100vh;">
+                                        </div>
+                                    </div>
+                                    <button type="button" class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button type="button" class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button id="bt" type="button" class="btn btn-primary" ><a target="_blank"  href="./Projects/Project 1/index.html">Output</a></button>
+                        <a href="https://github.com/Phani-1532/PROJECT-8--CONTACT-FORM-1-.git" target="_blank" class="github-link"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="foodModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="foodModalLabel">Project 2 Single-page E-commerce web page</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-row">
+                                <div class="column git" description>
+                                    <p class="review"><span>Short Project review</span></p>
+                                    <p>A Single Page E-Commerce Website is a streamlined online store where users can browse products, view details, and complete purchases, all within a single, interactive webpage. It offers a responsive and intuitive shopping experience with seamless navigation and checkout processes.</p>
+                                </div>
+                                <div class="carousel slide" id="carousel" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" ></button>
+                                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" ></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active" >
+                                            <img src="https://wallpapers.com/images/high/one-piece-film-red-wounded-shanks-l61ule17wq1p4ffo.webp" class="d-block w-100 carousel" alt="carousel1" style="max-height: 100vh">
+                                        </div>
+                                        <div class="carousel-item" >
+                                            <img src="https://wallpapers.com/images/high/vector-art-akatsuki-naruto-laptop-wvolgeoa3y4qdpdn.webp" class="d-block w-100 carousel" alt="carousel2" style="max-height: 100vh;">
+                                        </div>
+                                        <div class="carousel-item" >
+                                            <img src="https://wallpapers.com/images/high/bleach-4k-ultra-hd-soul-card-battle-poster-kzmktls7sxzz28wc.webp" class="d-block w-100 carousel" alt="carousel2" style="max-height: 100vh;">
+                                        </div>
+                                    </div>
+                                    <button type="button" class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button type="button" class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button id="bt" type="button" class="btn btn-primary" ><a target="_blank"  href="./Projects/Project 2/project1.html">Output</a></button>
+                        <a href="https://github.com/Phani-1532/PROJECT-1--Single-page-e-commerce-web-site-.git" target="_blank" class="github-link"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="foodModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="foodModalLabel">Project 3 Chat app</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-row">
+                                <div class="column git" description>
+                                    <p class="review"><span>Short Project review</span></p>
+                                    <p>A Chat App Webpage is a real-time communication platform that allows users to send and receive messages instantly, all within a single, interactive page. It features a user-friendly interface for seamless conversations and is designed to be responsive across devices.</p>
+                                </div>
+                                <div class="carousel slide" id="carousel" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" ></button>
+                                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" ></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active" >
+                                            <img src="./assests/image/chat app 1.png" class="d-block w-100 carousel" alt="carousel1" style="max-height: 100vh">
+                                        </div>
+                                        <div class="carousel-item" >
+                                            <img src="./assests/image/chat app 2.webp" class="d-block w-100 carousel" alt="carousel2" style="max-height: 100vh;">
+                                        </div>
+                                        <div class="carousel-item" >
+                                            <img src="./assests/image/chat app 3.png" class="d-block w-100 carousel" alt="carousel2" style="max-height: 100vh;">
+                                        </div>
+                                    </div>
+                                    <button type="button" class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button type="button" class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button id="bt" type="button" class="btn btn-primary" ><a target="_blank"  href="./Projects/Project 3/login.html">Output</a></button>
+                        <a href="https://github.com/Phani-1532/PROJECT-3-CHAT-APP-.git" target="_blank" class="github-link"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="projectModal4" tabindex="-1" aria-labelledby="foodModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="foodModalLabel">Project 4 To-do List</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-row">
+                                <div class="column git" description>
+                                    <p class="review"><span>Short Project review</span></p>
+                                    <p>A Basic To-Do App is a simple, interactive webpage that allows users to add, edit, and organize tasks, helping them manage their daily activities. It features a clean, responsive design for an efficient and user-friendly task management experience.</p>
+                                </div>
+                                <div class="carousel slide" id="carousel" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" ></button>
+                                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" ></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active" >
+                                            <img src="./assests/image/todo 1.png" class="d-block w-100 carousel" alt="carousel1" style="max-height: 100vh">
+                                        </div>
+                                        <div class="carousel-item" >
+                                            <img src="./assests/image/todo 2.avif" class="d-block w-100 carousel" alt="carousel2" style="max-height: 100vh;">
+                                        </div>
+                                        <div class="carousel-item" >
+                                            <img src="./assests/image/todo 3.jpg" class="d-block w-100 carousel" alt="carousel2" style="max-height: 100vh;">
+                                        </div>
+                                    </div>
+                                    <button type="button" class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button type="button" class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button id="bt" type="button" class="btn btn-primary" ><a target="_blank"  href="./Projects/Project 4/index.html">Output</a></button>
+                        <a href="https://github.com/Phani-1532/PROJECT-4--TODO-LIST-.git" target="_blank" class="github-link"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="projectModal5" tabindex="-1" aria-labelledby="foodModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="foodModalLabel">Project 5 Showcasing Food-items</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-row">
+                                <div class="column git" description>
+                                    <p class="review"><span>Short Project review</span></p>
+                                    <p>A Sliding Food Showcasing Website is an engaging, visually dynamic page that displays food items using interactive sliders, offering users an appealing way to explore different dishes. It features a responsive design for smooth navigation and an appetizing presentation of the menu.</p>
+                                </div>
+                                <div class="carousel slide" id="carousel" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" ></button>
+                                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" ></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active" >
+                                            <img src="./assests/image/showcase 1.webp" class="d-block w-100 carousel" alt="carousel1" style="max-height: 100vh">
+                                        </div>
+                                        <div class="carousel-item" >
+                                            <img src="./assests/image/showcase 2.webp" class="d-block w-100 carousel" alt="carousel2" style="max-height: 100vh;">
+                                        </div>
+                                        <div class="carousel-item" >
+                                            <img src="./assests/image/showcase 3.webp" class="d-block w-100 carousel" alt="carousel2" style="max-height: 100vh;">
+                                        </div>
+                                    </div>
+                                    <button type="button" class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button type="button" class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button id="bt" type="button" class="btn btn-primary" ><a target="_blank"  href="./Projects/Project 5/index.html">Output</a></button>
+                        <a href="https://github.com/Phani-1532/PROJECT-5--FOOD-ITEMS-.git" target="_blank" class="github-link"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="projectModal6" tabindex="-1" aria-labelledby="foodModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="foodModalLabel">Project 6 Swiggy type clone(Basic)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-row">
+                                <div class="column git" description>
+                                    <p class="review"><span>Short Project review</span></p>
+                                    <p>A Swiggy Clone Website is a basic food delivery platform that allows users to browse local restaurants, view menus, place orders, and track deliveries, all within a single, user-friendly page. It features a responsive design to ensure seamless interaction across devices.</p>
+                                </div>
+                                <div class="carousel slide" id="carousel" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" ></button>
+                                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" ></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active" >
+                                            <img src="./assests/image/swiggy 1a.avif" class="d-block w-100 carousel" alt="carousel1" style="max-height: 100vh">
+                                        </div>
+                                        <div class="carousel-item" >
+                                            <img src="./assests/image/swiggy 1bb.jpeg" class="d-block w-100 carousel" alt="carousel2" style="max-height: 100vh;">
+                                        </div>
+                                        <div class="carousel-item" >
+                                            <img src="./assests/image/swiggy 1c.png" class="d-block w-100 carousel" alt="carousel2" style="max-height: 100vh;">
+                                        </div>
+                                    </div>
+                                    <button type="button" class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button type="button" class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button id="bt" type="button" class="btn btn-primary" ><a target="_blank"  href="./Projects/Project 6/index.html">Output</a></button>
+                        <a href="https://github.com/Phani-1532/PROJECT-6--SWIGGY-CLONE-.git" target="_blank" class="github-link"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="assests/js/script.js"></script>
+
+    
+  </body>
+</html>

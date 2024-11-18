@@ -1,0 +1,17 @@
+.color-teal{
+    color: teal;
+}
+
+.icon-lg{
+    font-size: 50px;
+}
+.text-decoration{
+    text-decoration:none ;
+    list-style: none;
+    
+}
+
+.carousel{
+    margin-left: 40px;
+    margin-right: 40px;
+}

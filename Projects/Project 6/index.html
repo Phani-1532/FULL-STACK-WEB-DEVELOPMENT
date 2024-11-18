@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="header">
+        
+        <nav class="navbar bg-light navbar-light navbar-expand-lg">
+            <div class="container-fluid">
+                
+                <button type="button" class="navbar-toggler" data-bs-target="#navbar" data-bs-toggle="collapse">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <div class="navbar-nav  ">
+                        <a href="#" class="nav-item nav-link ">Home</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About Us</a>
+                                <div class="dropdown-menu">
+                                    <a href="#Company" class="dropdown-item ">Company Info</a>
+                                    <a href="#Team" class="dropdown-item">Reach us</a>
+                                </div>
+                        </div>
+                        <a href="#Contact Us" class="nav-item nav-link">Contact Us</a>
+                        <a href="#last" class="nav-item nav-link">Page End</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+    </header>
+
+    <section>
+        <!--sidebar-->
+        <div class="sidebar">
+            <div class="sidebar-menu1">
+                <img width="60" height="50" src="data:image/png;base64,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" alt="">
+            </div>
+            <div class="sidebar-menu">
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                <a href="#">Search</a>
+            </div>
+            <div class="sidebar-menu">
+                <span><i class="fa-solid fa-house"></i></span>
+                <a href="#">Home</a>
+            </div>
+            <div class="sidebar-menu">
+                <span><i class="fa-regular fa-heart"></i></span>
+                <a href="#">Favs</a>
+            </div>
+            <div class="sidebar-menu">
+                <span><i class="fa-regular fa-user"></i></span>
+                <a href="#">Profile</a>
+            </div>
+            <div class="sidebar-menu">
+                <span><i class="fa-solid fa-sliders"></i></span>
+                <a href="#">Settings</a>
+            </div>
+            
+            <div id="label1" class="sidebar-menu">
+                <span><i class="fa fa-cart-plus"></i></span>
+                <a href="#">Cart Up</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <!--main dashboard-->
+        <h1 class="logo">Food delivery services</h1>
+        <div class="dashboard">
+            
+            <div class="dashbboard-banner">
+                <img src="https://cdn.create.vista.com/api/media/small/460474642/stock-photo-idly-idli-south-indian-main-breakfast-item-which-beautifully-arranged" alt="">
+                <div class="banner-promo">
+                    <h1><span>50% OFF</span><br>
+                    Tasty Food <br> On Your Hand </h1>
+                </div>
+            </div>
+
+            <h3 class="dashboard-title">Recommend Food for you</h3>
+            <div class="dashboard-menu">
+                <a href="">Favorites</a>
+                <a href="">Best Seller</a>
+                <a href="">Near me </a>
+                <a href="">Promotion</a>
+                <a href="">Top rated</a>
+                <a href="">All</a>
+            </div>
+
+            <div class="dashboard-content">
+                <div class="dashboard-card">
+                    <img src=https://bodegamonumental.com/wp-content/uploads/2021/06/Cherish-the-deliciousness-of-the-most-amazing-pizza-from-mikes-pizza.jpg"" alt="" class="card-image">
+                    <div class="card-detail">
+                        <h4>Amazing Pizza <span>$30</span></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti nobis fugiat in aut qui, ullam dicta enim? Ducimus, veniam rerum?</p>
+                        <p class="card-time"><span class="fa fa-clock"></span>15-30 mins</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#foodModal">
+                            View Details
+                        </button>
+                        <!--Toast button-->
+                        <button id="addToCartButton" class="btn btn-danger">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="dashboard-card">
+                    <img src=https://bodegamonumental.com/wp-content/uploads/2021/06/Cherish-the-deliciousness-of-the-most-amazing-pizza-from-mikes-pizza.jpg"" alt="" class="card-image">
+                    <div class="card-detail">
+                        <h4>Amazing Pizza <span>$30</span></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti nobis fugiat in aut qui, ullam dicta enim? Ducimus, veniam rerum?</p>
+                        <p class="card-time"><span class="fa fa-clock"></span>15-30 mins</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#foodModal">
+                            View Details
+                        </button>
+                        <!--Toast button-->
+                        <button id="addToCartButton" class="btn btn-danger">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="dashboard-card">
+                    <img src=https://bodegamonumental.com/wp-content/uploads/2021/06/Cherish-the-deliciousness-of-the-most-amazing-pizza-from-mikes-pizza.jpg"" alt="" class="card-image">
+                    <div class="card-detail">
+                        <h4>Amazing Pizza <span>$30</span></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti nobis fugiat in aut qui, ullam dicta enim? Ducimus, veniam rerum?</p>
+                        <p class="card-time"><span class="fa fa-clock"></span>15-30 mins</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#foodModal">
+                            View Details
+                        </button>
+                        <!--Toast button-->
+                        <button id="addToCartButton" class="btn btn-danger">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="dashboard-card">
+                    <img src=https://bodegamonumental.com/wp-content/uploads/2021/06/Cherish-the-deliciousness-of-the-most-amazing-pizza-from-mikes-pizza.jpg"" alt="" class="card-image">
+                    <div class="card-detail">
+                        <h4>Amazing Pizza <span>$30</span></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti nobis fugiat in aut qui, ullam dicta enim? Ducimus, veniam rerum?</p>
+                        <p class="card-time"><span class="fa fa-clock"></span>15-30 mins</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#foodModal">
+                            View Details
+                        </button>
+                        <!--Toast button-->
+                        <button id="addToCartButton" class="btn btn-danger">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="dashboard-card">
+                    <img src=https://bodegamonumental.com/wp-content/uploads/2021/06/Cherish-the-deliciousness-of-the-most-amazing-pizza-from-mikes-pizza.jpg"" alt="" class="card-image">
+                    <div class="card-detail">
+                        <h4>Amazing Pizza <span>$30</span></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti nobis fugiat in aut qui, ullam dicta enim? Ducimus, veniam rerum?</p>
+                        <p class="card-time"><span class="fa fa-clock"></span>15-30 mins</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lastTwo">
+                            View Details
+                        </button>
+                        <!--Toast button-->
+                        <button id="addToCartButton" class="btn btn-danger">Add to Cart</button>
+                    </div>
+                </div>
+                <div id="last" class="dashboard-card">
+                    <img src=https://bodegamonumental.com/wp-content/uploads/2021/06/Cherish-the-deliciousness-of-the-most-amazing-pizza-from-mikes-pizza.jpg"" alt="" class="card-image">
+                    <div class="card-detail">
+                        <h4>Amazing Pizza <span>$30</span></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti nobis fugiat in aut qui, ullam dicta enim? Ducimus, veniam rerum?</p>
+                        <p class="card-time"><span class="fa fa-clock"></span>15-30 mins</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#foodModal">
+                            View Details
+                        </button>
+                        <!--Toast button-->
+                        <button id="addToCartButton" class="btn btn-danger">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <!--Modal-->
+        
+            <div class="modal fade" id="foodModal" tabindex="-1" aria-labelledby="foodModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="foodModalLabel">Amazing Pizza Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <img src="https://bodegamonumental.com/wp-content/uploads/2021/06/Cherish-the-deliciousness-of-the-most-amazing-pizza-from-mikes-pizza.jpg" alt="Pizza Image" class="img-fluid mb-3">
+                    <p><span>Ingredients: Fresh tomato, mozzarella, basil, and olive oil.</span></p>
+                    <p>Price: $30</p>
+                    <p>Estimated delivery time: 15-30 mins</p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="lastTwo" tabindex="-1" aria-labelledby="foodModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="foodModalLabel">Excellent Sandwich</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <img src="https://bodegamonumental.com/wp-content/uploads/2021/06/Cherish-the-deliciousness-of-the-most-amazing-pizza-from-mikes-pizza.jpg" alt="Pizza Image" class="img-fluid mb-3">
+                    <p>Ingredients: Fresh tomato, Bread, Tomato Kechup, and Spinach.</p>
+                    <p>Price: $40</p>
+                    <p>Estimated delivery time: 15-30 mins</p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+  
+    </section>
+    <section>
+        <!--order dashboard-->
+        <div id="dash" class="dashboard-order">
+            <div id="label" class="sidebar-menu">
+                <span><i class="fa fa-cart-arrow-down"></i></span>
+                <a href="#">Cart Down</a>
+            </div>
+            
+            <h3>Order menu</h3>
+            <div class="order-address">
+                <p>Address Delivery</p>
+                <h4>221 b baker street, gudivada</h4>
+            </div>
+            <div class="order-time">
+                <span class="fa fa-clock"></span> 30 mins <span class="fa fa-map-marker-alt"></span> 2 km
+            </div>
+            <div class="order-wrapper">
+                <div class="order-card">
+                    <img src="https://bodegamonumental.com/wp-content/uploads/2021/06/Cherish-the-deliciousness-of-the-most-amazing-pizza-from-mikes-pizza.jpg" alt="" class="order-image">
+                    <div class="order-detail">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, excepturi!</p>
+                        <i class="fa fa-times"></i><input type="text" name="" id="" value="1">
+                    </div>
+                    <h4 class="order-price">$35</h4>
+                </div>
+                
+                <div class="order-card">
+                    <img src="https://bodegamonumental.com/wp-content/uploads/2021/06/Cherish-the-deliciousness-of-the-most-amazing-pizza-from-mikes-pizza.jpg" alt="" class="order-image">
+                    <div class="order-detail">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, excepturi!</p>
+                        <i class="fa fa-times"></i><input type="text" name="" id="" value="1">
+                    </div>
+                    <h4 class="order-price">$35</h4>
+                </div>
+            </div>
+            <hr class="divider">
+            <div class="order-total">
+                <p>Subtotal <span>$70</span></p>
+                <p>Tax (10%) <span>$15.6</span></p>
+                <p>Delivery Fee <span>$2</span></p>
+
+                <div class="order-promo">
+                    <input class="input-promo" type="text" name="" id="" placeholder="Apply Voucher">
+                    <button class="button-promo">Apply</button>
+                </div>
+                <hr class="divider">
+                <p>Total <span>$87.6</span></p>
+                
+            </div>
+            <button class="checkout">
+                Checkout
+            </button>
+            
+        </div>
+    </section>
+
+    <section>
+        <!-- Toast Notification -->
+        <div class="toast-container position-fixed top-0 end-0 p-3">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="me-auto">Notification</strong>
+                    <small class="text-muted">Just now</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    Item added to the cart!
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>

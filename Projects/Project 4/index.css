@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive
+
+}
+
+body{
+
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: purple;
+    background-image: url(https://wallpapercave.com/wp/wp12644569.jpg);
+    background-size: cover;
+    overflow-x: hidden;
+    /*background-image: url(https://marketplace.canva.com/EAFHKU48OjE/1/0/1600w/canva-brown-aesthetic-organizer-desktop-wallpaper-i74i4N1B4o0.jpg);*/
+
+}
+
+.container{
+    
+    padding: 10px 20px;
+    width: 40%;
+    min-width: 450px;
+    background-color:grey;
+    border-radius: 10px;
+    max-height: 100%;
+    box-shadow:25px 25px 25px rgba(0, 0, 0, 0.25) ;
+    background-image: url(https://images.unsplash.com/photo-1644329843491-99edfc83de04?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHRvJTIwZG8lMjBsaXN0fGVufDB8fDB8fHww);
+}
+
+/*.box{
+    position: relative;
+    height: 550px;
+    width: 640px;
+    background-color:grey;
+    padding: 30px 50px ;
+    box-shadow:25px 25px 25px rgba(0, 0, 0, 0.25) ;
+    border-radius: 10px;
+    
+}*/
+
+#h1{
+    color: white;
+}
+
+#newtask{
+    position: relative;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+
+#taskinfo{
+    width: 75%;
+    height: 35px;
+    border: 2px solid grey;
+    font-weight: 400;
+    padding-left: 5px;
+    border-radius: 6px;
+    color: black;
+    
+
+}
+
+#taskinfo:focus{
+    outline: none;
+    border-color: blue;
+}
+
+#add{
+    background-color: blue;
+    color: white;
+    width: 20%;
+    height: 35px;
+    border-radius: 5px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    
+    font-size: 20px;
+}
+
+#add:hover{
+    background-color: rgb(63, 121, 176);
+}
+
+#tasklist{
+    margin-bottom: 10px;
+    padding: 10p 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    background-color: #c5e1e6;
+    height: 45px;
+    margin-bottom: 9px;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 25px;
+    border: 1px solid #939697;
+    
+    
+}
+
+.del{
+    color: red;
+    border-radius: 5px;
+    border: none;
+    background:none;
+    cursor: pointer;
+    outline: none;
+    font-size: 15px;
+}
+
+#work{
+    position: absolute;
+    left:570px;
+}
+
+
+
+
+
+
+

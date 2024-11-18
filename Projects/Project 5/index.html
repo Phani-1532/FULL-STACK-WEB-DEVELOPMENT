@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png">
+    
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="data:image/png;base64,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" alt="" >
+        </div>
+        <nav  class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Our Menu</a>
+            <a href="#">Clients</a>
+            <a href="#">Break</a>
+        </nav>
+        <div class="icons">
+            <div id="menu-bar" class="fa-solid fa-bars"></div>
+            <a href="#" class="contact-btn">Contact Us</a>
+        </div>
+    </header>
+
+    <div class="home">
+        <div class="main-home">
+            <div class="home-inner-content">
+                <div class="home-image">
+                    <img src="https://thumbs.dreamstime.com/b/south-indian-food-idli-medu-vada-dosa-sambar-coconut-chatney-tomato-chatney-south-indian-cuisine-features-idli-sambar-spicy-314167996.jpg" height="500px" alt="">
+                </div>
+            </div>
+            <div class="home-inner-content">
+                <div class="home-text-content">
+                    <h1>Contact us for best break fast</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sed laudantium illo nemo consectetur neque perspiciatis commodi, ad libero dolorem!</p>
+                    <a href="#">Contact us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="about">
+        <div class="main-about">
+            <div class="about-content">
+                <div class="about-inner-content">
+                    <img class="myimageabout" src="https://zolostays.com/blog/wp-content/uploads/2024/01/dda.jpg" width="100%" alt="">
+                </div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-inner-content">
+                   <div class="about-text-content">
+                    <h1>About us</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, repellat.</p>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="quality">
+        <div class="main-quality">
+            <div class="main-inner-quality">
+                <div class="quality-content">
+                     <h1>Our food quality</h1>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate animi veritatis numquam qui consequatur odit molestias quidem ab porro iure?</p>
+                </div>
+            </div>
+            <div class="main-inner-quality">
+                <div class="quality-content quality-image">
+                    <img src="https://www.holidify.com/images/cmsuploads/compressed/breakfast-2408818_960_720_20200107183621.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <div class="main-heading">
+            <h1>Popular Food items</h1>
+        </div>
+        <div class="main-gallery">
+            
+            <div class="inner-gallery">
+                <div class="gallery-image">
+                    <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?cs=srgb&dl=pexels-ash-craig-122861-376464.jpg&fm=jpg" alt="">
+                </div>
+            </div>
+
+            <div class="inner-gallery">
+                <div class="gallery-image">
+                    <img src="https://b.zmtcdn.com/data/pictures/5/20247465/24fb78bc09f4e3fd046a47b18ba56f3d.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="inner-gallery">
+                <div class="gallery-image">
+                    <img src="https://cdn.pixabay.com/photo/2024/09/13/18/26/ai-generated-9045688_640.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="inner-gallery">
+                <div class="gallery-image">
+                    <img src="https://thumb.photo-ac.com/3c/3c04ab8c7eca21ffd27965421bf3f74c_t.jpeg" alt="">
+                </div>
+            </div>
+
+            <div class="inner-gallery">
+                <div class="gallery-image">
+                    <img src="https://www.shutterstock.com/image-photo/toasted-bread-avocado-egg-healthy-260nw-2413596135.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="inner-gallery">
+                <div class="gallery-image">
+                    <img src="https://deannaminich.com/wp-content/uploads/2017/02/Diverse-Diet.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="enjoy-our-food">
+        <div class="food-main-content">
+            <h1>Enjoy our food</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, itaque autem inventore voluptate obcaecati voluptas illum veritatis similique commodi natus?</p>
+        </div>
+    </div>
+
+    <div class="our-menu-food">
+        <h1>Our menu</h1>
+        <div class="main-menu-food">
+            <div class="inner-menu-food">
+                <div class="menu-food-content">
+                    <img src="https://www.tastingtable.com/img/gallery/15-indian-breakfasts-you-need-to-try-at-least-once/idli-sambar-1671483071.jpg" alt="">
+
+                    <div class="menu-food-text">
+                        <h2>Idly with sambar</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure fuga dolorum voluptas explicabo perspiciatis blanditiis, aliquid consectetur soluta vero incidunt.</p>
+                        <p><span>Price / $1.2</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-menu-food">
+                <div class="menu-food-content">
+                    <img src="https://images.immediate.co.uk/production/volatile/sites/30/2022/09/Classic-Waffles-0ae28b2.jpg?quality=90&resize=556,505" alt="">
+                    <div class="menu-food-text">
+                        <h2>Waffle with honey</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure fuga dolorum voluptas explicabo perspiciatis blanditiis, aliquid consectetur soluta vero incidunt.</p>
+                        <p><span>Price / $1.2</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-menu-food">
+                <div class="menu-food-content">
+                    <img src="https://cdn.prod.website-files.com/5fe33d036237252135e3e74d/6286187c6ebcbd5f83acf661_South%20Indian%20Breakfast%20Receipes%20by%20Cult.fit.jpg" alt="">
+                    <div class="menu-food-text">
+                        <h2><span>Special:-</span> All combo</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure fuga dolorum voluptas explicabo perspiciatis blanditiis, aliquid consectetur soluta vero incidunt.</p>
+                        <p><span>Price / $1.2</span></p>                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="index.js"></script>
+</body>
+</html>
